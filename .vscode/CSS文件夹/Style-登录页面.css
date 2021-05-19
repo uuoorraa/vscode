@@ -1,0 +1,37 @@
+body{
+    margin: 0;/*边距*/
+}
+.login-div{
+    width: 100vw;
+    height: 100vh;
+    display: flex; /*属性为容器*/
+    align-items:center;/*账号密码垂直居中*/
+    justify-content: center;/*账号密码水平居中*/
+    background-size: cover;
+    background: url("../images/背景1.jpg") no-repeat;
+}
+.login-form{
+    width: 30%;
+    height: 40%; /*用百分比是根据div大小来决定的，而不是整体页面的大小*/
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center; /*文本在form表单中居中*/
+    border-radius: 5%; /*将边框的角改为有弧度的圆角*/
+}
+.login-form input{
+    width:60%;
+    height: 10%;
+    font-size: 24px; 
+    margin-top: 15px; /*上边距*/
+}
+.login-form button{
+    width: 40%;
+    height: 10%;
+    margin-top: 24px; /*上边距*/
+    background: rgba(77, 61, 61, 0.3);
+    border-style: none; /*去边框线*/
+    font-size: 24px;
+}
+.login-form button:hover{
+    background: rgba(245, 235, 235, 0.3);
+
+}

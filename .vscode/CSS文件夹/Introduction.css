@@ -1,0 +1,60 @@
+header{
+    background-image: url(../images/背景2.jpg);
+    background-size: cover;
+    background-position: center;/*让背景图片的中间部分出现在此部分*/
+    filter: grayscale(0.3); /*加上滤镜，增加灰度*/
+    height: 500px;
+    padding: 0 1rem;/*左右边距调整一下*/
+}
+.logo-nav{
+    display: flex;
+    align-items: center;/*调整logo和导航在同一水平线*/
+    justify-content: space-between;/*调整logo和导航在左右两侧分布*/
+    padding: 1rem 0;
+    color:rgb(252, 238, 117)
+}
+nav a{
+    padding: 5px 1rem;
+    cursor: pointer;
+}
+.header-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 52px); /*调整主体的高度是整个header的高度减去导航的高度*/
+    color: rgb(252, 198, 117);
+}
+.header-title h1{
+    font-size: 4rem;
+}
+.header-title p{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.logo-nav a:hover{ /*鼠标覆盖时导航条变色*/
+    background-color: rgba(252, 238, 117, 0.4);
+    font-weight: 700;
+    transition: background-color 0.3s linear;
+}
+
+
+main{
+    border-left: 20rem;
+    width: 55%;
+    height:max-content;
+    margin: auto;
+    line-height: 2.5rem;
+    background-color: rgba(252, 238, 117, 0.4);
+    text-align: justify;
+    font-size: 20px;
+    font-weight:normal;
+    padding: 5rem 5rem;
+}
+
+main div{
+    display: flex; 
+    justify-content: space-between; 
+    flex-direction: column; 
+    align-items: center
+}
